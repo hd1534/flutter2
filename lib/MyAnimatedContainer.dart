@@ -2,12 +2,12 @@ import 'dart:math';
 
 import 'package:flutter/material.dart';
 
-class MyAnimatedcontainer extends StatefulWidget {
+class MyAnimatedContainer extends StatefulWidget {
   @override
-  _MyAnimatedcontainerState createState() => _MyAnimatedcontainerState();
+  _MyAnimatedContainerState createState() => _MyAnimatedContainerState();
 }
 
-class _MyAnimatedcontainerState extends State<MyAnimatedcontainer> {
+class _MyAnimatedContainerState extends State<MyAnimatedContainer> {
   final random = Random();
   double _width = 50.0;
   double _height = 50.0;
