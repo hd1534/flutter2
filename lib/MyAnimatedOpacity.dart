@@ -31,7 +31,7 @@ class _MyAnimatedOpacityState extends State<MyAnimatedOpacity> {
       floatingActionButton: FloatingActionButton(
         child: Icon(Icons.play_arrow),
         onPressed: () {
-          setState(() {
+          setState(() {  // 이거 빼먹으면 값이 바뀌어도 화면이 리프래시 안되서 안보임
             _visible = !_visible;
           });
         },

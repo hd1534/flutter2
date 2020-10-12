@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/MyAnimatedContainer.dart';
 import 'package:flutter_cookbook/MyAnimatedOpacity.dart';
+import 'package:flutter_cookbook/MyDrawer.dart';
 
 void main() {
   runApp(MyApp());
@@ -38,9 +39,16 @@ class Home extends StatelessWidget {
           ),
 
           ListTile(
-            title: Text("OpacityContainer"),
+            title: Text("AnimatedOpacityContainer"),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => MyAnimatedOpacity()));
+            },
+          ),
+
+          ListTile(
+            title: Text("Drawer"),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => MyDrawer()));
             },
           ),
 
