@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/MyAnimatedContainer.dart';
 import 'package:flutter_cookbook/MyAnimatedOpacity.dart';
 import 'package:flutter_cookbook/MyDrawer.dart';
+import 'package:flutter_cookbook/MyOrientation.dart';
 import 'package:flutter_cookbook/MySnackBar.dart';
 
 void main() {
@@ -54,6 +55,12 @@ class Home extends StatelessWidget {
             title: Text("SnackBar"),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => MySnackBar()));
+            },
+          ),
+          ListTile(
+            title: Text("Orientation"),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => MyOrientation()));
             },
           ),
 
