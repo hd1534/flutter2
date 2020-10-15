@@ -17,6 +17,12 @@ class MyApp extends StatelessWidget {
       title: 'Flutter AnimatedContainer',
       theme: ThemeData(
         primarySwatch: Colors.blue,
+
+      /*
+      brightness: Brightness.dark,  // 테마
+      primaryColor: Colors.green,
+      accentColor: Colors.yellow,
+*/
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
       home: Home(),
@@ -58,7 +64,7 @@ class Home extends StatelessWidget {
             },
           ),
           ListTile(
-            title: Text("Orientation"),
+            title: Text("Orientation (화면 방향에 따른 처리)"),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => MyOrientation()));
             },

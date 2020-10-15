@@ -15,7 +15,7 @@ class _MyOrientationState extends State<MyOrientation> {
       body: OrientationBuilder(
         builder: (BuildContext context, Orientation orientation) {
           return GridView.count(
-            crossAxisCount: orientation == Orientation.portrait ? 3 : 5,
+            crossAxisCount: orientation == Orientation.portrait ? 3 : 5, // portrait, landscapes
             children: List.generate(50, (index) =>  Center(child: Text('Item $index'))),
           );
         },
