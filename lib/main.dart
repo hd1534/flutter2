@@ -4,6 +4,7 @@ import 'package:flutter_cookbook/MyAnimatedOpacity.dart';
 import 'package:flutter_cookbook/MyDrawer.dart';
 import 'package:flutter_cookbook/MyOrientation.dart';
 import 'package:flutter_cookbook/MySnackBar.dart';
+import 'package:flutter_cookbook/MyTabController.dart';
 
 void main() {
   runApp(MyApp());
@@ -67,6 +68,12 @@ class Home extends StatelessWidget {
             title: Text("Orientation (화면 방향에 따른 처리)"),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => MyOrientation()));
+            },
+          ),
+          ListTile(
+            title: Text("TabController"),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => MyTabController()));
             },
           ),
 
