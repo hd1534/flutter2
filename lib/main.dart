@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_cookbook/MyAnimatedContainer.dart';
 import 'package:flutter_cookbook/MyAnimatedOpacity.dart';
 import 'package:flutter_cookbook/MyDrawer.dart';
+import 'package:flutter_cookbook/MyFormValidation.dart';
 import 'package:flutter_cookbook/MyOrientation.dart';
 import 'package:flutter_cookbook/MySnackBar.dart';
 import 'package:flutter_cookbook/MyTabController.dart';
@@ -74,6 +75,12 @@ class Home extends StatelessWidget {
             title: Text("TabController"),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => MyTabController()));
+            },
+          ),
+          ListTile(
+            title: Text("Form Validation"),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => MyFormValidation()));
             },
           ),
 
