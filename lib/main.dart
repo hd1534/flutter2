@@ -5,6 +5,7 @@ import 'package:flutter_cookbook/MyDrawer.dart';
 import 'package:flutter_cookbook/MyFormValidation.dart';
 import 'package:flutter_cookbook/MyOrientation.dart';
 import 'package:flutter_cookbook/MySnackBar.dart';
+import 'package:flutter_cookbook/MySwipeToDismiss.dart';
 import 'package:flutter_cookbook/MyTabController.dart';
 
 void main() {
@@ -81,6 +82,12 @@ class Home extends StatelessWidget {
             title: Text("Form Validation"),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => MyFormValidation()));
+            },
+          ),
+          ListTile(
+            title: Text("Swipe To Dismiss"),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => MySwipeToDismissState()));
             },
           ),
 
