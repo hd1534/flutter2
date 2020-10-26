@@ -4,6 +4,7 @@ import 'package:flutter_cookbook/MyAnimatedOpacity.dart';
 import 'package:flutter_cookbook/MyDrawer.dart';
 import 'package:flutter_cookbook/MyFormValidation.dart';
 import 'package:flutter_cookbook/MyOrientation.dart';
+import 'package:flutter_cookbook/MyPageView.dart';
 import 'package:flutter_cookbook/MySnackBar.dart';
 import 'package:flutter_cookbook/MySwipeToDismiss.dart';
 import 'package:flutter_cookbook/MyTabController.dart';
@@ -88,6 +89,12 @@ class Home extends StatelessWidget {
             title: Text("Swipe To Dismiss"),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => MySwipeToDismissState()));
+            },
+          ),
+          ListTile(
+            title: Text("Page View"),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => MyPageView()));
             },
           ),
 
