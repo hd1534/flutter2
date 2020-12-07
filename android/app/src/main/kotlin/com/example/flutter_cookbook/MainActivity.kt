@@ -13,7 +13,7 @@ class MainActivity: FlutterActivity() {
         MethodChannel(flutterEngine.dartExecutor.binaryMessenger, CHANNEL).setMethodCallHandler {
             call, result ->
             if (call.method == "getValue") {
-                result.success("성공")
+                result.success("성공 (환경 : 안드로이드)")
             } else {
                 result.notImplemented()
             }
