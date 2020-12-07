@@ -3,6 +3,7 @@ import 'package:flutter_cookbook/MyAnimatedContainer.dart';
 import 'package:flutter_cookbook/MyAnimatedOpacity.dart';
 import 'package:flutter_cookbook/MyDrawer.dart';
 import 'package:flutter_cookbook/MyFormValidation.dart';
+import 'package:flutter_cookbook/MyMethodChannel.dart';
 import 'package:flutter_cookbook/MyOrientation.dart';
 import 'package:flutter_cookbook/MyPageView.dart';
 import 'package:flutter_cookbook/MySnackBar.dart';
@@ -95,6 +96,12 @@ class Home extends StatelessWidget {
             title: Text("Page View"),
             onTap: () {
               Navigator.push(context, MaterialPageRoute(builder: (context) => MyPageView()));
+            },
+          ),
+          ListTile(
+            title: Text("Method Channel (네이티브 연동 {안드로이드, IOS})"),
+            onTap: () {
+              Navigator.push(context, MaterialPageRoute(builder: (context) => MyMethodChannel()));
             },
           ),
 
